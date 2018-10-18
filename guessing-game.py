@@ -8,8 +8,14 @@ def main():
         guess = guess.strip()
         if guess == answer:
             print("You win!")
-            break
-        elif guess == "quit":
+            ask = input("Do you like this animal? Enter 'y' or 'n': ")
+            if ask == "y":
+                print("I like this animal too!.")
+                break
+            if ask == "n":
+                print("I also don't like this animal.")
+                break
+        elif guess[0] == "q":
             break
         else:
             print("Try again. Wrong animal.")
