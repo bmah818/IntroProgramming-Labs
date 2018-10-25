@@ -7,9 +7,12 @@ def showIntro():
     print("Valid commands are 'add', 'mult', 'sub', 'div', power, and 'quit'.\n")
 
 def inputNumber():
-    global num1, num2
-    num1 = int(input("Enter the first number: "))
-    num2 = int(input("Enter the second number: "))
+    try:
+        num1 = int(input("Enter the first number: "))
+        num2 = int(input("Enter the second number: "))
+    except:
+        print("You need to enter two numbers. Try again please.")
+    return num1, num2
     
 def showOutro():
     print("\nThank you for using the Arithmetic Engine…")
@@ -21,19 +24,19 @@ def doLoop():
         cmd = cmd.lower()
         
         if cmd == "add":
-            inputNumber()
+            num1,num2 = inputNumber()
             result = num1 + num2
         elif cmd == "sub":
-            inputNumber()
+            num1,num2 = inputNumber()
             result = num1 - num2
         elif cmd == "mult":
-            inputNumber()
+            num1,num2 = inputNumber()
             result = num1 * num2
         elif cmd == "div":
-            inputNumber()
+            num1,num2 = inputNumber()
             result = num1 // num2
         elif cmd == "power":
-            inputNumber()
+            num1,num2 = inputNumber()
             result = num1 ** num2
         elif cmd == "quit":
             break
