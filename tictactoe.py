@@ -1,5 +1,5 @@
 # CMPT 120 Intro to Programming
-# Lab #7 
+# Lab #7  tictacoe
 # Author: Bryan Mah
 # Created: 2018/11/08
 symbol = [ " ", "x", "o" ]
