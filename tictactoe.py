@@ -1,5 +1,5 @@
 # CMPT 120 Intro to Programming
-# Lab #6 – Lists and Error Handling
+# Lab #7 
 # Author: Bryan Mah
 # Created: 2018/11/08
 symbol = [ " ", "x", "o" ]
